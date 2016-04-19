@@ -1,0 +1,4 @@
+table.my-tables .rows { text-align: right;}
+table.my-tables .auto_increment { text-align: right;}
+table.my-tables thead tr { background-color: #999; color:#FFF; font-weight:bold; }
+table.my-tables td { border-bottom:1px solid #CCC; }

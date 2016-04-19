@@ -16,7 +16,7 @@ Displays database table information.
 == Description ==
 
 Displays basic table information with the database.
-Helpful in tracking
+Helpful in tracking:
 
  * if plugins you just installed created new tables
  * number of records changed in tables

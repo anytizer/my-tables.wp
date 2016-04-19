@@ -16,8 +16,7 @@ function my_tables_list_show()
 
 add_action( 'admin_menu', 'my_tables_list');
 function my_tables_list(){
-	$icon = plugins_url( '/pages/images/logo.png', __FILE__ );
+	$icon = 'dashicons-info';
 	add_menu_page('My Tables', 'My Tables', 'manage_options', 'my-tables/my-tables.php', 'my_tables_list_show', $icon, 80 );
-	
 	wp_enqueue_style('my-tables', plugins_url( 'pages/css/style.css', __FILE__));
 }

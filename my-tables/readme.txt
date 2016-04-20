@@ -15,11 +15,13 @@ Displays database table information.
 
 == Description ==
 
-Displays basic table information with the database.
+Displays basic database table information.
 Helpful in tracking:
 
- * if plugins you just installed created new tables
- * number of records changed in tables
+ * Whether your newly installed plugin created new tables
+ * How many records do you have in each tables.
+
+Productivity tips: You can keep eyes on number of records in tables.
 
 
 == Installation ==
@@ -54,7 +56,7 @@ And it is available to admin users only.
 
 == Screenshots ==
 
-1. List of tables.
+1. List of tables under your WordPress Database.
 
 
 == Changelog ==

@@ -1,18 +1,24 @@
 <?php
 class my_tables_proecssor
 {
+	/**
+	 * Ordered List of columns to report
+	 */
 	private $required_fields = array(
 		'Name',
 		'Engine',
 		'Rows',
 		#'Avg_row_length',
-		#'Index_length',
+		'Index_length',
 		'Auto_increment',
 		'Create_time',
 		'Collation',
 		'Comment',			
 	);
 
+	/**
+	 * Full list of columns available in MySQL 5.6
+	 */
 	private $available_fields = array(
 		'Name',
 		'Engine',
@@ -79,7 +85,9 @@ class my_tables_proecssor
 		return $this->required_fields;
 	}
 
-
+	/**
+	 * Filters a list of columns
+	 */
 	public function table_status()
 	{
 		global $wpdb;

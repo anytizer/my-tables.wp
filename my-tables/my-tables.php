@@ -8,10 +8,23 @@
  * Version: 1.0.0
  */
 
+/**
+ * Main page to display contents
+ */
 function my_tables_list_show()
 {
 	require_once(dirname(__FILE__).'/classes/class.my_tables_proecssor.inc.php');
 	require_once(dirname(__FILE__).'/pages/help.php');
+}
+
+/**
+ * Put a menu in bar
+ */
+add_action( 'admin_menu', 'my_tables_list');
+function my_tables_list(){
+	$icon = 'dashicons-info';
+	add_menu_page('My Tables', 'My Tables', 'manage_options', 'my-tables/my-tables.php', 'my_tables_list_show', $icon, 80 );
+	wp_enqueue_style('my-tables', plugins_url( 'pages/css/style.css', __FILE__));
 }
 
 /**
@@ -26,14 +39,4 @@ function my_tables_settings_link($links) {
 	);
 	$links = array_merge($actions, $links);
 	return $links;
-}
-
-/**
- * Put a menu in bar
- */
-add_action( 'admin_menu', 'my_tables_list');
-function my_tables_list(){
-	$icon = 'dashicons-info';
-	add_menu_page('My Tables', 'My Tables', 'manage_options', 'my-tables/my-tables.php', 'my_tables_list_show', $icon, 80 );
-	wp_enqueue_style('my-tables', plugins_url( 'pages/css/style.css', __FILE__));
 }

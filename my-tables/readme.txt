@@ -2,7 +2,7 @@
 
 Contributors: pbimal
 Donate link: http://bimal.org.np/
-Tags: mysql, database, tables, information, status
+Tags: my tables, database tables, mysql, database, tables, information, status
 Requires at least: 4.5
 Tested up to: 4.5
 Stable tag: 1.0.0
@@ -20,6 +20,7 @@ Helpful in tracking:
 
  * Whether your newly installed plugin created new tables
  * How many records do you have in each tables.
+ * Monitor the Collations or Storage Engines.
 
 Productivity tips: You can keep eyes on number of records in tables.
 
@@ -62,6 +63,7 @@ And it is available to admin users only.
 == Changelog ==
 
 = 1.0.0 =
+* Documentation improved.
 * Initial release.
 
 

@@ -2,7 +2,7 @@
 /**
  * Plugin Name: My Tables
  * Plugin URI: http://bimal.org.np/
- * Description: Displays MySQL Tables Status
+ * Description: Displays list of MySQL Tables and basic Status
  * Author: Bimal Poudel
  * Author URI: http://bimal.org.np/
  * Version: 1.0.0
@@ -14,6 +14,23 @@ function my_tables_list_show()
 	require_once(dirname(__FILE__).'/pages/help.php');
 }
 
+/**
+ * Adds a link within list of plugins
+ */
+$my_tables_self=basename(dirname(__FILE__)).'/'.basename(__FILE__);
+add_filter("plugin_action_links_{$my_tables_self}", 'my_tables_settings_link');
+function my_tables_settings_link($links) {
+	global $my_tables_self;
+	$actions = array(
+		"<a href='?page={$my_tables_self}'>View Tables</a>",
+	);
+	$links = array_merge($actions, $links);
+	return $links;
+}
+
+/**
+ * Put a menu in bar
+ */
 add_action( 'admin_menu', 'my_tables_list');
 function my_tables_list(){
 	$icon = 'dashicons-info';

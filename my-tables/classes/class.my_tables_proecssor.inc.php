@@ -3,6 +3,7 @@ class my_tables_proecssor
 {
 	/**
 	 * Ordered List of columns to report
+	 * Case sensitive
 	 */
 	private $required_fields = array(
 		'Name',
@@ -18,6 +19,8 @@ class my_tables_proecssor
 
 	/**
 	 * Full list of columns available in MySQL 5.6
+	 * Listed for reference only
+	 * Case sensitive
 	 */
 	private $available_fields = array(
 		'Name',
@@ -58,9 +61,7 @@ class my_tables_proecssor
 			$cell_name = ucwords(implode(' ', explode('_', $cell)));
 			$theads[] = "<td class='{$cell_word}'>{$cell_name}</td>";
 		}
-		
-		#print_r($styles);
-		
+
 		$rows = array();
 		foreach ($data as $row) {
 			$cells = array();
@@ -68,16 +69,16 @@ class my_tables_proecssor
 			$styles_index = -1;
 			foreach ($row as $cell) {
 				++$styles_index;
-				#print_r($row); die();
 				$cells[] = "<td class='{$styles[$styles_index]}'>{$cell}</td>";
 			}
 			$rows[] = "<tr>" . implode('', $cells) . "</tr>";
 		}
 
-		return "<table cellpadding='7' cellspacing='0' class='my-tables'>
-		<thead><tr>" . implode('', $theads) . "</tr></thead>
-		<tbody>" . implode('', $rows) . "</tbody>
-		</table>";
+		return "
+<table cellpadding='7' cellspacing='0' class='my-tables'>
+	<thead><tr>" . implode('', $theads) . "</tr></thead>
+	<tbody>" . implode('', $rows) . "</tbody>
+</table>";
 	}
 	
 	public function table_columns()

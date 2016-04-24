@@ -1,5 +1,5 @@
 <?php
-class my_tables_proecssor
+class my_tables_processor
 {
 	/**
 	 * Ordered List of columns to report

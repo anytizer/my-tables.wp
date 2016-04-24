@@ -2,7 +2,7 @@
 <h2>My Tables - Basic Status</h2>
 <p>Plugin helping WordPress Developers - by <a href="http://bimal.org.np/">Bimal Poudel</a> | <a href="http://dev.mysql.com/doc/refman/5.7/en/show-table-status.html">MySQL Manual - SHOW TABLE STATUS</a>.</p>
 <?php
-$mtp = new my_tables_proecssor();
+$mtp = new my_tables_processor();
 $tables = $mtp->table_status();
 $columns = $mtp->table_columns();
 echo $mtp->html_table($tables, $columns);

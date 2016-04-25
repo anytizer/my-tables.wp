@@ -1,8 +1,8 @@
 <?php
 /**
  * Plugin Name: My Tables
- * Plugin URI: http://bimal.org.np/
  * Description: Displays list of MySQL Tables and basic Status
+ * Plugin URI: http://bimal.org.np/
  * Author: Bimal Poudel
  * Author URI: http://bimal.org.np/
  * Version: 1.0.0

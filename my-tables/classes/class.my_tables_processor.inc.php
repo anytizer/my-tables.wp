@@ -3,7 +3,7 @@ class my_tables_processor
 {
 	/**
 	 * Ordered List of columns to report
-	 * Case sensitive
+	 * CaSe SEnsiTive
 	 */
 	private $required_fields = array(
 		'Name',
@@ -14,32 +14,6 @@ class my_tables_processor
 		'Auto_increment',
 		'Create_time',
 		'Collation',
-		'Comment',			
-	);
-
-	/**
-	 * Full list of columns available in MySQL 5.6
-	 * Listed for reference only
-	 * Case sensitive
-	 */
-	private $available_fields = array(
-		'Name',
-		'Engine',
-		'Version',
-		'Row_format',
-		'Rows',
-		'Avg_row_length',
-		'Data_length',
-		'Max_data_length',
-		'Index_length',
-		'Data_free',
-		'Auto_increment',
-		'Create_time',
-		'Update_time',
-		'Check_time',
-		'Collation',
-		'Checksum',
-		'Create_options',
 		'Comment',			
 	);
 	

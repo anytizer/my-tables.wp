@@ -2,7 +2,7 @@
 
 Contributors: pbimal
 Donate link: http://bimal.org.np/
-Tags: my tables, database tables, mysql, database, tables, information, status
+Tags: my tables, database tables, mysql, database, tables, information, status, health, indexing, rows, debug
 Requires at least: 4.5
 Tested up to: 4.5
 Stable tag: 1.0.0
@@ -27,18 +27,27 @@ Productivity tips: You can keep eyes on number of records in tables.
 
 == Installation ==
 
+
 = Method #1 =
+
+ * Go to your WP Admin > Plugins > Add New page.
+ * Search for "My Tables".
+ * Click install. Click activate.
+
+
+= Method #2 =
 
  * Download this plugin as a .zip file.
  * Go to WP Admin > Plugins > Add new > Upload Plugin.
  * Upload the .zip file and activate the plugin.
 
 
-= Method #2 =
+= Method #3 =
 
- * Go to your WP Admin > Plugins > Add New page.
- * Search for "my tables".
- * Click install. Click activate.
+ * Download the file my-tables.zip.
+ * Unzip the file on your computer.
+ * Upload folder my-tables (you just unziped) to /wp-content/plugins/ directory.
+ * Activate the plugin through the WP Admin > Plugins menu.
 
 
 == Frequently Asked Questions ==

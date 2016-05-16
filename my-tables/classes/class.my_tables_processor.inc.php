@@ -49,7 +49,8 @@ class my_tables_processor
 		}
 
 		return "
-<table cellpadding='7' cellspacing='0' class='my-tables'>
+<table class='my-tables wp-list-table widefat striped'>
+
 	<thead><tr>" . implode('', $theads) . "</tr></thead>
 	<tbody>" . implode('', $rows) . "</tbody>
 </table>";

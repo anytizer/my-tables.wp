@@ -3,9 +3,9 @@
 Contributors: pbimal
 Donate link: http://bimal.org.np/
 Tags: my tables, database tables, mysql, database, tables, information, status, health, indexing, rows, debug
-Requires at least: 4.5
-Tested up to: 4.5
-Stable tag: 1.0.0
+Requires at least: 4.5.0
+Tested up to: 4.5.2
+Stable tag: 1.0.1
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -16,13 +16,13 @@ Displays database table information.
 == Description ==
 
 Displays basic database table information.
+
 Helpful in tracking:
 
- * Whether your newly installed plugin created new tables
- * How many records do you have in each tables.
+ * Whether your newly installed plugin created new tables.
+ * How many records exist in each tables.
  * Monitor the Collations or Storage Engines.
-
-Productivity tips: You can keep eyes on number of records in tables.
+ * Table prefixes.
 
 
 == Installation ==
@@ -49,13 +49,15 @@ Productivity tips: You can keep eyes on number of records in tables.
  * Upload folder my-tables (you just unziped) to /wp-content/plugins/ directory.
  * Activate the plugin through the WP Admin > Plugins menu.
 
+Click on [how to install a WordPress Plugin](http://goo.gl/Ims8pt) for more details.
+
 
 == Frequently Asked Questions ==
 
 = How does it work =
 
-Reads database table status and prints out the basic useful information.
-The page is accessible only for admin users who can manage options.
+It reads the database table status and prints out the basic useful information.
+The page is accessible to admin users only.
 
 
 = Is it safe? =
@@ -71,6 +73,9 @@ And it is available to admin users only.
 
 == Changelog ==
 
+= 1.0.1 =
+* Banner image added
+
 = 1.0.0 =
 * Documentation improved.
 * Initial release.
@@ -79,3 +84,8 @@ And it is available to admin users only.
 == Upgrade Notice ==
 
 No special needs.
+
+
+== Banner File ==
+
+[Dan Dimmock](https://unsplash.com/photos/oU0LEbUxnQU) at [unsplash.com](https://unsplash.com/@dimmstr)

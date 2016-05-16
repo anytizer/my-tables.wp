@@ -1,6 +1,6 @@
 <div class="wrap">
-<h2>My Tables - Basic Status</h2>
-<p>Plugin helping WordPress Developers - by <a href="http://bimal.org.np/">Bimal Poudel</a> | <a href="http://dev.mysql.com/doc/refman/5.7/en/show-table-status.html">MySQL Manual - SHOW TABLE STATUS</a>.</p>
+<h2>Basic Status of My Tables</h2>
+<p>Plugin helping WordPress Developers - by <a href="http://bimal.org.np/">Bimal Poudel</a> | <a href="http://dev.mysql.com/doc/refman/5.7/en/show-table-status.html">MySQL Manual - SHOW TABLE STATUS</a> | <a href="https://mariadb.com/kb/en/mariadb/show-table-status/">MariaDB</a>.</p>
 <?php
 $mtp = new my_tables_processor();
 $tables = $mtp->table_status();

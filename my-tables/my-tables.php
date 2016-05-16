@@ -1,7 +1,7 @@
 <?php
 /**
  * Plugin Name: My Tables
- * Description: Displays list of MySQL Tables and basic Status
+ * Description: Displays selected fields from <code>SHOW TABLE STATUS</code>
  * Plugin URI: http://bimal.org.np/
  * Author: Bimal Poudel
  * Author URI: http://bimal.org.np/
@@ -13,4 +13,5 @@ require_once(__MY_TABLES__.'/classes/class.my_tables.inc.php');
 require_once(__MY_TABLES__.'/classes/class.my_tables_processor.inc.php');
 
 $whoami = basename(__MY_TABLES__).'/'.basename(__FILE__);
-new my_tables($whoami);
+$my_tables = new my_tables();
+$my_tables->init($whoami);

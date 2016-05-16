@@ -1,9 +1,13 @@
 <?php
-class my_tables
+final class my_tables
 {
 	private $whoami = null;
 
-	public function __construct($whoami='/tmp/plugin-name/plugin-name.php')
+	public function __construct()
+	{
+	}
+	
+	public function init($whoami='/tmp/plugin-name/plugin-name.php')
 	{
 		/**
 		 * Put a menu in bar
@@ -20,18 +24,18 @@ class my_tables
 	/**
 	 * Main page to display contents
 	 */
-	function my_tables_list_show()
+	public function my_tables_list_show()
 	{
 		require_once(__MY_TABLES__.'/pages/help.php');
 	}
 
-	function my_tables_list(){
+	public function my_tables_list(){
 		$icon = 'dashicons-info';
 		add_menu_page('My Tables', 'My Tables', 'manage_options', 'my-tables/my-tables.php', array($this, 'my_tables_list_show'), $icon, 80 );
 		wp_enqueue_style('my-tables', plugins_url( 'pages/css/style.css', dirname(__FILE__)));
 	}
 
-	function my_tables_settings_link($links) {
+	public function my_tables_settings_link($links) {
 		$actions = array(
 			"<a href='?page={$this->whoami}'>My Tables</a>",
 			"<a href='http://bimal.org.np/wp-plugins/feedback/?plugin=my-tables'>Feedback</a>",

@@ -81,4 +81,39 @@ class my_tables_processor
 		}
 		return $data;
 	}
+	
+	public function table_sizes()
+	{
+		$sizes_sql="
+SELECT
+	ROUND(KBS/POWER(1024,1), 2) KBs,
+	ROUND(KBS/POWER(1024,2), 2) MBs,
+	table_name
+FROM
+(
+	SELECT
+		table_name, SUM(index_length) KBS
+	FROM information_schema.tables
+	WHERE
+		table_schema = DATABASE()
+	GROUP BY table_name
+) A
+ORDER BY
+	KBS DESC
+;";
+		global $wpdb;
+		$tables = $wpdb->get_results($sizes_sql);
+		$data = array();
+		foreach($tables as $table)
+		{
+			$data[] = (array)$table;
+		}
+		return $data;
+	}
+	
+	public function columns_sizes()
+	{
+		$columns = array('In KBs', 'In MBs', 'Table Name');
+		return $columns;
+	}
 }

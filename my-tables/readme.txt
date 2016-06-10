@@ -74,6 +74,7 @@ And it is available to admin users only.
 == Changelog ==
 
 = 1.0.1 =
+* Sizes per table added.
 * Banner image added
 
 = 1.0.0 =

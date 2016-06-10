@@ -1,7 +1,7 @@
 <?php
 /**
  * Plugin Name: My Tables
- * Description: Displays selected fields from <code>SHOW TABLE STATUS</code>
+ * Description: Displays selected fields from <code>SHOW TABLE STATUS;</code>
  * Plugin URI: http://bimal.org.np/
  * Author: Bimal Poudel
  * Author URI: http://bimal.org.np/

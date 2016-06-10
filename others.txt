@@ -1,7 +1,8 @@
 Links back to the website for Micro-Optimization article.
 
 Code Climate
-https://codeclimate.com/github/bimalpoudel/my-tables
+	- https://codeclimate.com/github/bimalpoudel/my-tables
+
 
 Travis
-https://travis-ci.org/bimalpoudel/my-tables/settings
+	- https://travis-ci.org/bimalpoudel/my-tables/settings

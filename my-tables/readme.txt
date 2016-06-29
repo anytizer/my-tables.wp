@@ -10,12 +10,12 @@ License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
 
-Displays database table information.
+Displays table information of your WordPress Database.
 
 
 == Description ==
 
-Displays basic database table information.
+Displays table information of your WordPress Database.
 
 Helpful in tracking:
 
@@ -23,6 +23,7 @@ Helpful in tracking:
  * How many records exist in each tables.
  * Monitor the Collations or Storage Engines.
  * Table prefixes.
+ * Full list of tables within your WordPress database.
 
 
 == Installation ==
@@ -46,7 +47,7 @@ Helpful in tracking:
 
  * Download the file my-tables.zip.
  * Unzip the file on your computer.
- * Upload folder my-tables (you just unziped) to /wp-content/plugins/ directory.
+ * Upload folder my-tables (you just unzipped) to /wp-content/plugins/ directory.
  * Activate the plugin through the WP Admin > Plugins menu.
 
 Click on [how to install a WordPress Plugin](http://goo.gl/Ims8pt) for more details.
@@ -63,7 +64,7 @@ The page is accessible to admin users only.
 = Is it safe? =
 
 Yes. It only displays the basic information like table names, auto increment values, and number of rows and table comments.
-And it is available to admin users only.
+And it is available to admin users only within wp-admin.
 
 
 == Screenshots ==

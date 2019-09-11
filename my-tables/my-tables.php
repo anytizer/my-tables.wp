@@ -9,9 +9,9 @@
  */
 
 define('__MY_TABLES__', dirname(__FILE__));
-require_once(__MY_TABLES__.'/classes/class.my_tables.inc.php');
-require_once(__MY_TABLES__.'/classes/class.my_tables_processor.inc.php');
+require_once(__MY_TABLES__ . '/classes/class.my_tables.inc.php');
+require_once(__MY_TABLES__ . '/classes/class.my_tables_processor.inc.php');
 
-$whoami = basename(__MY_TABLES__).'/'.basename(__FILE__);
+$my_tables_whoami = basename(__MY_TABLES__) . '/' . basename(__FILE__);
 $my_tables = new my_tables();
-$my_tables->init($whoami);
+$my_tables->init($my_tables_whoami);
